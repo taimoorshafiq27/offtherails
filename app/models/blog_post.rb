@@ -2,7 +2,7 @@
 #
 # Table name: blog_posts
 #
-#  id         :integer          not null, primary key
+#  id         :bigint           not null, primary key
 #  body       :text
 #  title      :string
 #  created_at :datetime         not null
