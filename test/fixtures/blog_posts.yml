@@ -2,17 +2,18 @@
 #
 # Table name: blog_posts
 #
-#  id         :bigint           not null, primary key
-#  body       :text
-#  title      :string
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  id           :bigint           not null, primary key
+#  body         :text
+#  published_at :datetime
+#  title        :string
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
 #
 
-one:
-  title: MyString
-  body: MyText
+# one:
+#   title: MyString
+#   body: MyText
 
-two:
-  title: MyString
-  body: MyText
+# two:
+#   title: MyString
+#   body: MyText

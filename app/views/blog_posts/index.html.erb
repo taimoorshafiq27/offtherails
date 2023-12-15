@@ -1,5 +1,29 @@
+<%= render partial: "shared/navbar" %>
+
 <h1>Index</h1>
 
 <% @blog_posts.each do |blog_post| %>
+<% if blog_post.draft? %>
+  <div>Draft</div>
+<% elsif @blog_post.scheduled? %>
+  <div>Scheduled</div>
+<% end %>
   <%= link_to blog_post.title, blog_post %>
 <% end %>
+
+<div class="grid grid-cols-3 mt-24 mx-8">
+  <div>
+  <%# filter e.g. software development / security, asc / desc %>
+  <div>
+    <img src=#>
+  </div>
+  <div class="mt-8">
+    <h1 class="font-bold text-4xl">Link to blog post</h1>
+  <div class="mt-4">
+    <h2 class="text-lg">Lorem ipsum bllaa slgsgsdg alfadkladf akfalkfalf akflakorem ipsum bllaa slgsgsdg alfadkladf akfalkfalf akflakorem ipsum bllaa slgsgsdg alfadkladf akfalkfalf akflakorem ipsum</h2>
+    <div class="flex mt-4">
+      <h3 class="font-bold">Read more</h3>
+      <h3 class="ml-8 font-bold">Preview</h3>
+    </div>
+  </div>
+</div>

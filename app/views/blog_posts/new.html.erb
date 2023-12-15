@@ -10,5 +10,7 @@
     <%= form.label :body %>
     <%= form.text_area :body %>
 
+    <%= form.datetime_select :published_at, include_blank: true %>
+
     <%= form.submit %>
 <% end %>
